@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$smallTextSize: 24px;
+$mediumTextSize: 35px;
+$bigTextSize: 48px;
+
+* {
+  background: #83abfc;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: grid;
+}
+body {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 568px;
+  align-items: center;
+  display: grid;
+  #heder {
+    display: none;
+  }
+
+  #score {
+    font-size: $smallTextSize;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      display: none;
+    }
+  }
+  #choice {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 120px;
+    img {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  #info {
+    font-size: $mediumTextSize;
+    text-align: center;
+  }
+  #playerChoice {
+    display: none;
+  }
+  #choices {
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    div {
+      margin: 0 10px;
+    }
+    img {
+      cursor: pointer;
+      &:hover {
+        border-radius: 50%;
+        box-shadow: 0 0px 5px white;
+      }
+    }
+  }
+  #reset {
+    width: 132px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    img {
+      &:hover {
+        border-radius: 20%;
+        box-shadow: 0 0px 5px white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 700px;
+    justify-content: center;
+    #heder {
+      display: block;
+      font-size: $bigTextSize;
+      text-align: center;
+    }
+    #score {
+      font-size: $mediumTextSize;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      #player {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 0 0;
+        #playerScore {
+          margin-right: 10px;
+        }
+      }
+      #robot {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 auto;
+        #computerScore {
+          margin-left: 10px;
+        }
+      }
+      #sign {
+        display: none;
+      }
+      img {
+        display: block;
+      }
+    }
+    #main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 768px;
+      #choice {
+        margin: 0;
+        margin: 0 30px 0 auto;
+        width: 130px;
+        height: 130px;
+        order: 3;
+        img {
+          height: 130px;
+          width: 130px;
+        }
+      }
+      #info {
+        order: 2;
+      }
+      #playerChoice {
+        display: block;
+        margin: 0 auto 0 30px;
+        order: 1;
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+}

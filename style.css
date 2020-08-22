@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  background: #83abfc;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 568px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+body #heder {
+  display: none;
+}
+
+body #score {
+  font-size: 24px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #score img {
+  display: none;
+}
+
+body #choice {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+body #choice img {
+  height: 120px;
+  width: 120px;
+}
+
+body #info {
+  font-size: 35px;
+  text-align: center;
+}
+
+body #playerChoice {
+  display: none;
+}
+
+body #choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #choices div {
+  margin: 0 10px;
+}
+
+body #choices img {
+  cursor: pointer;
+}
+
+body #choices img:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0px 5px white;
+          box-shadow: 0 0px 5px white;
+}
+
+body #reset {
+  width: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+body #reset img:hover {
+  border-radius: 20%;
+  -webkit-box-shadow: 0 0px 5px white;
+          box-shadow: 0 0px 5px white;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #heder {
+    display: block;
+    font-size: 48px;
+    text-align: center;
+  }
+  body #score {
+    font-size: 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  body #score #player {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto 0 0;
+  }
+  body #score #player #playerScore {
+    margin-right: 10px;
+  }
+  body #score #robot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 0 auto;
+  }
+  body #score #robot #computerScore {
+    margin-left: 10px;
+  }
+  body #score #sign {
+    display: none;
+  }
+  body #score img {
+    display: block;
+  }
+  body #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 768px;
+  }
+  body #main #choice {
+    margin: 0;
+    margin: 0 30px 0 auto;
+    width: 130px;
+    height: 130px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  body #main #choice img {
+    height: 130px;
+    width: 130px;
+  }
+  body #main #info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  body #main #playerChoice {
+    display: block;
+    margin: 0 auto 0 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  body #main #playerChoice img {
+    width: 130px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
